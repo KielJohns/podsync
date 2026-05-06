@@ -1,0 +1,69 @@
+# Podsync Configuration
+
+[server]
+port = 8080
+hostname = "https://podcasts.johnsk-pods.org"
+bind_address = "*"
+
+[storage]
+type = "local"
+
+[storage.local]
+data_dir = "/app/data"
+
+[database]
+badger = { truncate = true, file_io = true }
+
+[downloader]
+self_update = true
+timeout = 30
+
+# YouTube API key loaded from environment variable
+[tokens]
+# Key is set via PODSYNC_YOUTUBE_API_KEY environment variable
+
+[cleanup]
+keep_last = 20
+
+# Feeds
+[feeds]
+
+  # Mo Bitar - Test channel
+  [feeds.mobitar]
+  url = "https://www.youtube.com/@mobitar"
+  page_size = 10
+  update_period = "6h"
+  quality = "high"
+  format = "audio"
+  opml = true
+  private_feed = true
+
+  [feeds.mobitar.custom]
+  title = "Mo Bitar"
+  description = "Mo Bitar's YouTube channel as a podcast"
+  author = "Mo Bitar"
+  category = "Technology"
+  lang = "en"
+
+  [feeds.mobitar.clean]
+  keep_last = 10
+
+  # Fireship
+  [feeds.fireship]
+  url = "https://www.youtube.com/@Fireship"
+  page_size = 10
+  update_period = "6h"
+  quality = "high"
+  format = "audio"
+  opml = true
+  private_feed = true
+
+  [feeds.fireship.custom]
+  title = "Fireship"
+  description = "High-intensity code tutorials"
+  author = "Jeff Delaney"
+  category = "Technology"
+  lang = "en"
+
+  [feeds.fireship.clean]
+  keep_last = 10

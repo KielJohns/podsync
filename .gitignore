@@ -34,7 +34,6 @@ venv/
 podsync.log
 
 db
-config.toml
 data
 
 .claude/settings.local.json
