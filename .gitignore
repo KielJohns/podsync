@@ -38,3 +38,7 @@ config.toml
 data
 
 .claude/settings.local.json
+
+# Local environment and tools
+.env
+.omc/
