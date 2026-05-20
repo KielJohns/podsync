@@ -32,7 +32,7 @@ keep_last = 20
   [feeds.mobitar]
   url = "https://www.youtube.com/@mobitar"
   page_size = 10
-  update_period = "6h"
+  update_period = "2h"
   quality = "high"
   format = "audio"
   opml = true
@@ -52,7 +52,7 @@ keep_last = 20
   [feeds.fireship]
   url = "https://www.youtube.com/@Fireship"
   page_size = 10
-  update_period = "6h"
+  update_period = "2h"
   quality = "high"
   format = "audio"
   opml = true
