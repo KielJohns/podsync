@@ -67,3 +67,22 @@ keep_last = 20
 
   [feeds.fireship.clean]
   keep_last = 10
+
+  # One-off videos playlist
+  [feeds.one_offs]
+  url = "https://www.youtube.com/playlist?list=PLrc8-exw-gYgmYY6QpXlOUtpjrNWOYqQ7"
+  page_size = 50
+  update_period = "2h"
+  quality = "high"
+  format = "audio"
+  opml = true
+  private_feed = true
+
+  [feeds.one_offs.custom]
+  title = "One-Off Videos"
+  description = "Individual YouTube videos collected into a podcast"
+  category = "Technology"
+  lang = "en"
+
+  [feeds.one_offs.clean]
+  keep_last = 20
