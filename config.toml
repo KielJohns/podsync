@@ -28,9 +28,9 @@ keep_last = 20
 # Feeds
 [feeds]
 
-  # Mo Bitar - Test channel
-  [feeds.mobitar]
-  url = "https://www.youtube.com/@mobitar"
+  # Matt Pocock - TypeScript educator
+  [feeds.mattpocockuk]
+  url = "https://www.youtube.com/@mattpocockuk"
   page_size = 10
   update_period = "2h"
   quality = "high"
@@ -38,14 +38,14 @@ keep_last = 20
   opml = true
   private_feed = true
 
-  [feeds.mobitar.custom]
-  title = "Mo Bitar"
-  description = "Mo Bitar's YouTube channel as a podcast"
-  author = "Mo Bitar"
+  [feeds.mattpocockuk.custom]
+  title = "Matt Pocock"
+  description = "Matt Pocock's TypeScript tutorials and tips"
+  author = "Matt Pocock"
   category = "Technology"
   lang = "en"
 
-  [feeds.mobitar.clean]
+  [feeds.mattpocockuk.clean]
   keep_last = 10
 
   # Fireship
