@@ -30,7 +30,7 @@ keep_last = 20
 
   # Matt Pocock - TypeScript educator
   [feeds.mattpocockuk]
-  url = "https://www.youtube.com/@mattpocockuk"
+  url = "https://www.youtube.com/@mattpocockuk/videos"
   page_size = 10
   update_period = "2h"
   quality = "high"
