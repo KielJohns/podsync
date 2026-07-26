@@ -28,26 +28,6 @@ keep_last = 20
 # Feeds
 [feeds]
 
-  # Matt Pocock - TypeScript educator
-  [feeds.mattpocockuk]
-  url = "https://www.youtube.com/@mattpocockuk/videos"
-  page_size = 10
-  update_period = "2h"
-  quality = "high"
-  format = "audio"
-  opml = true
-  private_feed = true
-
-  [feeds.mattpocockuk.custom]
-  title = "Matt Pocock"
-  description = "Matt Pocock's TypeScript tutorials and tips"
-  author = "Matt Pocock"
-  category = "Technology"
-  lang = "en"
-
-  [feeds.mattpocockuk.clean]
-  keep_last = 10
-
   # Fireship
   [feeds.fireship]
   url = "https://www.youtube.com/@Fireship"
